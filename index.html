@@ -1,11 +1,38 @@
-<html>
-<body>
-<embed src="/uploads/fight1.mp4" autoplay="false">
-<p>4-6-16</p>
+<!DOCTYPE html> 
+<html> 
+<body> 
+
+<video id="myVideo" width="320" height="176" controls="controls">
+  <source src="/uploads/fight1.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+Posted: 4-6-16
 <br>
+<video id="myVideo" width="320" height="176" controls="controls">
+  <source src="/uploads/fight2.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+Posted: 4-6-16
 <br>
-<embed src="/uploads/fight2.mp4" autoplay="false">
-<br>
-<p>4-6-16</p>
-</body>
+
+<script>
+var vid = document.getElementById("myVideo");
+function enableAutoplay() { 
+    vid.autoplay = true;
+    vid.load();
+}
+
+function disableAutoplay() { 
+    vid.autoplay = false;
+    vid.load();
+} 
+
+function checkAutoplay() { 
+    alert(vid.autoplay);
+} 
+</script> 
+
+<p>Video courtesy of <a href="http://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
+
+</body> 
 </html>
