@@ -135,7 +135,6 @@ $(document).ready(function(){
 		return m+":"+s;
 	};
 });
-} else {
 /*
 JS Modified from a tutorial found here: 
 http://www.inwebson.com/html5/custom-html5-video-controls-with-jquery/
